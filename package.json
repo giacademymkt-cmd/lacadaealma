@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:local": "bash scripts/build-local.sh",
     "lint": "eslint .",
     "preview": "vite preview"
   },

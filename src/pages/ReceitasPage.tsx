@@ -115,19 +115,29 @@ export default function ReceitasPage() {
                         className="h-44 flex items-center justify-center relative overflow-hidden"
                         style={{ background: `linear-gradient(135deg, ${receita.corCard}, ${receita.corCard}99)` }}
                       >
-                        <div className="absolute inset-0 opacity-10"
-                          style={{
-                            backgroundImage: 'radial-gradient(circle at 20% 50%, white 1px, transparent 1px), radial-gradient(circle at 80% 20%, white 1px, transparent 1px)',
-                            backgroundSize: '30px 30px',
-                          }}
-                        />
-                        <span className="text-7xl drop-shadow-sm group-hover:scale-110 transition-transform duration-300">
-                          {receita.emoji}
-                        </span>
+                        {receita.imagemUrl ? (
+                          <img
+                            src={receita.imagemUrl}
+                            alt={receita.nome}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        ) : (
+                          <>
+                            <div className="absolute inset-0 opacity-10"
+                              style={{
+                                backgroundImage: 'radial-gradient(circle at 20% 50%, white 1px, transparent 1px), radial-gradient(circle at 80% 20%, white 1px, transparent 1px)',
+                                backgroundSize: '30px 30px',
+                              }}
+                            />
+                            <span className="text-7xl drop-shadow-sm group-hover:scale-110 transition-transform duration-300">
+                              {receita.emoji}
+                            </span>
+                          </>
+                        )}
 
                         {/* Nível badge */}
                         <span
-                          className="absolute top-3 right-3 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm"
+                          className="absolute top-3 right-3 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm z-10"
                           style={{ backgroundColor: NIVEL_COR[receita.nivel] }}
                         >
                           {NIVEL_LABEL[receita.nivel]}

@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Download, Clock, Ruler, ChevronDown, AlertTriangle, Package, BookOpen, Wrench, Layers, Scissors, Sparkles } from 'lucide-react';
+import { ArrowLeft, Download, Clock, Ruler, ChevronDown, AlertTriangle, Package, BookOpen, Wrench, Layers, Scissors, Sparkles, Play } from 'lucide-react';
 import { getReceita, NIVEL_LABEL, NIVEL_COR, CATEGORIAS } from '../data/receitas';
+import type { Receita } from '../data/receitas';
 
-type Aba = 'materiais' | 'abreviacoes' | 'notas' | 'receita' | 'montagem' | 'acabamento';
-
-const ABAS: { id: Aba; label: string; icon: React.ReactNode }[] = [
-  { id: 'materiais',   label: 'Materiais',    icon: <Package size={15} /> },
-  { id: 'abreviacoes', label: 'Abreviações',  icon: <BookOpen size={15} /> },
-  { id: 'notas',       label: 'Notas',        icon: <AlertTriangle size={15} /> },
-  { id: 'receita',     label: 'Receita',      icon: <Layers size={15} /> },
-  { id: 'montagem',    label: 'Montagem',     icon: <Wrench size={15} /> },
-  { id: 'acabamento',  label: 'Acabamento',   icon: <Scissors size={15} /> },
-];
+type Aba = 'materiais' | 'abreviacoes' | 'notas' | 'receita' | 'montagem' | 'acabamento' | 'video';
 
 export default function ReceitaPage() {
   const { slug } = useParams<{ slug: string }>();
   const receita = getReceita(slug ?? '');
   const [abaAtiva, setAbaAtiva] = useState<Aba>('receita');
   const [partesAbertas, setPartesAbertas] = useState<Set<number>>(new Set([0]));
+
+  const abasExibidas: { id: Aba; label: string; icon: React.ReactNode }[] = [
+    { id: 'receita',     label: 'Receita',      icon: <Layers size={15} /> },
+    ...(receita?.videoUrl ? [{ id: 'video' as Aba, label: 'Vídeo Tutorial', icon: <Play size={15} /> }] : []),
+    { id: 'montagem',    label: 'Montagem',     icon: <Wrench size={15} /> },
+    { id: 'acabamento',  label: 'Acabamento',   icon: <Scissors size={15} /> },
+    { id: 'materiais',   label: 'Materiais',    icon: <Package size={15} /> },
+    { id: 'abreviacoes', label: 'Abreviações',  icon: <BookOpen size={15} /> },
+    { id: 'notas',       label: 'Notas',        icon: <AlertTriangle size={15} /> },
+  ];
 
   if (!receita) {
     return (
@@ -72,12 +74,20 @@ export default function ReceitaPage() {
             </Link>
 
             <div className="flex flex-col md:flex-row md:items-center gap-6">
-              {/* Emoji */}
+              {/* Imagem ou Emoji */}
               <div
-                className="w-24 h-24 rounded-3xl flex items-center justify-center text-5xl shadow-lg shrink-0"
+                className="w-24 h-24 rounded-3xl flex items-center justify-center shadow-lg shrink-0 overflow-hidden"
                 style={{ background: receita.corCard }}
               >
-                {receita.emoji}
+                {receita.imagemUrl ? (
+                  <img
+                    src={receita.imagemUrl}
+                    alt={receita.nome}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <span className="text-5xl">{receita.emoji}</span>
+                )}
               </div>
 
               {/* Info */}
@@ -123,7 +133,7 @@ export default function ReceitaPage() {
         <div className="sticky top-[65px] z-30 bg-white/90 backdrop-blur-md border-b border-brand-rose/10 shadow-sm">
           <div className="max-w-4xl mx-auto px-6 md:px-12 overflow-x-auto">
             <div className="flex gap-1 py-2 min-w-max">
-              {ABAS.map(aba => (
+              {abasExibidas.map(aba => (
                 <button
                   key={aba.id}
                   onClick={() => setAbaAtiva(aba.id)}
@@ -280,6 +290,16 @@ export default function ReceitaPage() {
                                               <p className="text-xs text-amber-800">{c.nota}</p>
                                             </div>
                                           )}
+                                          {/* Foto explicativa */}
+                                          {c.fotoUrl && (
+                                            <div className="mt-3">
+                                              <img
+                                                src={c.fotoUrl}
+                                                alt={`Foto da carreira ${c.numero}`}
+                                                className="max-h-60 rounded-xl border border-brand-rose/10 object-cover hover:scale-[1.02] transition-transform duration-200"
+                                              />
+                                            </div>
+                                          )}
                                         </div>
                                       </div>
                                     </div>
@@ -305,19 +325,57 @@ export default function ReceitaPage() {
                 </div>
               )}
 
+              {/* ── VÍDEO TUTORIAL ── */}
+              {abaAtiva === 'video' && receita.videoUrl && (
+                <div>
+                  <h2 className="font-serif text-2xl font-bold text-brand-dark mb-6">Vídeo Tutorial</h2>
+                  <div className="bg-white rounded-3xl p-6 border border-brand-rose/10 shadow-sm mb-6">
+                    <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-md">
+                      <iframe
+                        src={receita.videoUrl}
+                        title={`Vídeo Tutorial de ${receita.nome}`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                      />
+                    </div>
+                    <p className="text-sm text-brand-taupe mt-4 text-center">
+                      Acompanhe o passo a passo completo em vídeo para tirar qualquer dúvida na confecção da sua peça.
+                    </p>
+                  </div>
+                </div>
+              )}
+
               {/* ── MONTAGEM ── */}
               {abaAtiva === 'montagem' && (
                 <div>
                   <h2 className="font-serif text-2xl font-bold text-brand-dark mb-6">Montagem</h2>
-                  <div className="space-y-3">
-                    {receita.montagem.map((passo, i) => (
-                      <div key={i} className="flex items-start gap-4 bg-white rounded-2xl p-4 border border-brand-rose/10">
-                        <span className="w-7 h-7 rounded-full bg-brand-rose/20 text-brand-dark text-xs font-bold flex items-center justify-center shrink-0">
-                          {i + 1}
-                        </span>
-                        <p className="text-sm text-brand-dark leading-relaxed">{passo}</p>
-                      </div>
-                    ))}
+                  <div className="space-y-4">
+                    {receita.montagem.map((p, i) => {
+                      const passo = typeof p === 'string' ? { texto: p } : p;
+                      return (
+                        <div key={i} className="bg-white rounded-2xl p-5 border border-brand-rose/10 shadow-sm flex flex-col gap-3">
+                          <div className="flex items-start gap-4">
+                            <span className="w-7 h-7 rounded-full bg-brand-rose/20 text-brand-dark text-xs font-bold flex items-center justify-center shrink-0">
+                              {i + 1}
+                            </span>
+                            <div className="flex-1">
+                              <p className="text-sm text-brand-dark leading-relaxed font-medium">{passo.texto}</p>
+                              {passo.fotoUrl && (
+                                <div className="mt-3">
+                                  <img
+                                    src={passo.fotoUrl}
+                                    alt={`Montagem passo ${i + 1}`}
+                                    className="max-h-80 rounded-xl border border-brand-rose/10 object-cover"
+                                  />
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               )}
@@ -326,13 +384,29 @@ export default function ReceitaPage() {
               {abaAtiva === 'acabamento' && (
                 <div>
                   <h2 className="font-serif text-2xl font-bold text-brand-dark mb-6">Acabamento</h2>
-                  <div className="space-y-3">
-                    {receita.acabamento.map((passo, i) => (
-                      <div key={i} className="flex items-start gap-4 bg-white rounded-2xl p-4 border border-brand-rose/10">
-                        <Sparkles size={16} className="text-brand-rose mt-0.5 shrink-0" />
-                        <p className="text-sm text-brand-dark leading-relaxed">{passo}</p>
-                      </div>
-                    ))}
+                  <div className="space-y-4">
+                    {receita.acabamento.map((p, i) => {
+                      const passo = typeof p === 'string' ? { texto: p } : p;
+                      return (
+                        <div key={i} className="bg-white rounded-2xl p-5 border border-brand-rose/10 shadow-sm flex flex-col gap-3">
+                          <div className="flex items-start gap-4">
+                            <Sparkles size={16} className="text-brand-rose mt-1 shrink-0" />
+                            <div className="flex-1">
+                              <p className="text-sm text-brand-dark leading-relaxed font-medium">{passo.texto}</p>
+                              {passo.fotoUrl && (
+                                <div className="mt-3">
+                                  <img
+                                    src={passo.fotoUrl}
+                                    alt={`Acabamento passo ${i + 1}`}
+                                    className="max-h-80 rounded-xl border border-brand-rose/10 object-cover"
+                                  />
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
 
                   {/* CTA Print */}
@@ -366,7 +440,7 @@ export default function ReceitaPage() {
 // ─────────────────────────────────────────────
 // COMPONENTE DE IMPRESSÃO
 // ─────────────────────────────────────────────
-function PrintView({ receita }: { receita: ReturnType<typeof getReceita> }) {
+function PrintView({ receita }: { receita: Receita }) {
   if (!receita) return null;
   return (
     <div className="print-page">
@@ -462,7 +536,7 @@ function PrintView({ receita }: { receita: ReturnType<typeof getReceita> }) {
       <section className="print-section">
         <h2>Montagem</h2>
         <ol className="print-list">
-          {receita.montagem.map((passo, i) => <li key={i}>{passo}</li>)}
+          {receita.montagem.map((passo, i) => <li key={i}>{typeof passo === 'string' ? passo : passo.texto}</li>)}
         </ol>
       </section>
 
@@ -470,7 +544,7 @@ function PrintView({ receita }: { receita: ReturnType<typeof getReceita> }) {
       <section className="print-section">
         <h2>Acabamento</h2>
         <ul className="print-list">
-          {receita.acabamento.map((passo, i) => <li key={i}>{passo}</li>)}
+          {receita.acabamento.map((passo, i) => <li key={i}>{typeof passo === 'string' ? passo : passo.texto}</li>)}
         </ul>
       </section>
 
