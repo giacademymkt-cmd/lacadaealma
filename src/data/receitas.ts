@@ -1117,90 +1117,140 @@ const raposaChubby: Receita = {
   "slug": "raposa-chubby",
   "nome": "Raposa Chubby",
   "categoria": "animais",
-  "nivel": "intermediario",
-  "tamanhoFinal": "~12 cm",
-  "tempoEstimado": "3–4 horas",
+  "nivel": "iniciante",
+  "tamanhoFinal": "~19 cm",
+  "tempoEstimado": "4-5 horas",
   "emoji": "🦊",
   "corCard": "#F5E1D3",
   "imagemUrl": "/receitas/raposa-chubby/capa.jpg",
-  "videoUrl": "https://www.youtube.com/embed/UM7Evk8nhPQ",
   "materiais": [
-    { "item": "Fio Amigurumi laranja (cor principal)", "detalhe": "aprox. 40 g" },
-    { "item": "Fio Amigurumi branco (peito e cauda)", "detalhe": "aprox. 15 g" },
-    { "item": "Fio Amigurumi preto (orelhas e patas)", "detalhe": "aprox. 10 g" },
-    { "item": "Agulha de crochê", "detalhe": "3,0 mm" },
-    { "item": "Olhos de segurança pretos", "detalhe": "8 mm — 1 par" },
+    { "item": "Fio Amigurumi laranja", "detalhe": "cor principal" },
+    { "item": "Fio Amigurumi creme", "detalhe": "focinho e corpo" },
+    { "item": "Fio Amigurumi terracota", "detalhe": "detalhe do corpo" },
+    { "item": "Fio Amigurumi preto", "detalhe": "orelhas e patas" },
+    { "item": "Agulha de crochê", "detalhe": "adequada ao fio" },
+    { "item": "Olhos de segurança pretos", "detalhe": "tamanho compatível" },
     { "item": "Fibra siliconada", "detalhe": "para recheio" },
     { "item": "Agulha de tapeceiro", "detalhe": "para costura" }
   ],
   "abreviacoes": [
     { "sigla": "AM", "significado": "Anel mágico" },
     { "sigla": "pb", "significado": "Ponto baixo" },
-    { "sigla": "aum", "significado": "Aumento — 2 pb no mesmo ponto" },
-    { "sigla": "dim", "significado": "Diminuição" }
+    { "sigla": "aum", "significado": "Aumento" },
+    { "sigla": "dim", "significado": "Diminuição" },
+    { "sigla": "FLO", "significado": "Somente nas alças da frente" }
   ],
   "notas": [
-    "Trabalhe em espiral contínua.",
-    "Troque de cor no último ponto da carreira anterior para transições invisíveis."
+    "A cabeça e o corpo são tecidos juntos de uma vez só."
   ],
   "partes": [
     {
-      "nome": "Cabeça e Corpo (Peça Única)",
+      "nome": "Cabeça e Corpo",
       "quantidade": 1,
       "carreiras": [
-        { "numero": "C1", "instrucao": "Com fio laranja: AM, 6 pb", "total": 6 },
-        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
-        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
-        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
-        { "numero": "C5", "instrucao": "*3 pb, aum* repita 6×", "total": 30 },
-        { "numero": "C6", "instrucao": "*4 pb, aum* repita 6×", "total": 36 },
-        { "numero": "C7–C13", "instrucao": "pb em cada ponto", "total": 36, "nota": "Posicionar olhos entre C10 e C11 com 7 pontos de distância." },
-        { "numero": "C14", "instrucao": "*4 pb, dim* repita 6×", "total": 30 },
-        { "numero": "C15", "instrucao": "*3 pb, dim* repita 6×", "total": 24 },
-        { "numero": "C16", "instrucao": "*2 pb, dim* repita 6× (início do corpo)", "total": 18 },
-        { "numero": "C17", "instrucao": "Mude para fio branco na frente para o peito: 6 pb laranja, 6 pb branco, 6 pb laranja", "total": 18 },
-        { "numero": "C18", "instrucao": "6 pb laranja, aum, 4 pb branco, aum, 6 pb laranja", "total": 20 },
-        { "numero": "C19", "instrucao": "pb em cada ponto mantendo as cores estabelecidas", "total": 20 },
-        { "numero": "C20", "instrucao": "Com fio laranja apenas: *3 pb, dim* repita 4×", "total": 16 },
-        { "numero": "C21", "instrucao": "*2 pb, dim* repita 4×", "total": 12, "nota": "Rechear firmemente o corpo e a cabeça." },
-        { "numero": "C22", "instrucao": "dim 6×", "total": 6 }
+        { "numero": "C1", "instrucao": "Com fio laranja: 6 pb no AM", "total": 6 },
+        { "numero": "C2", "instrucao": "[aum] 6x", "total": 12 },
+        { "numero": "C3", "instrucao": "pb em cada ponto", "total": 12 },
+        { "numero": "C4", "instrucao": "Troque para Creme. Em FLO (alças da frente): [3 pb, aum] 3x", "total": 15 },
+        { "numero": "C5", "instrucao": "2 pb, aum, [4 pb, aum] 2x, 2 pb", "total": 18 },
+        { "numero": "C6", "instrucao": "[5 pb, aum] 3x", "total": 21 },
+        { "numero": "C7", "instrucao": "3 pb, aum, [6 pb, aum] 2x, 3 pb", "total": 24 },
+        { "numero": "C8", "instrucao": "Troque para Laranja. Em FLO: [3 pb, aum] 6x", "total": 30 },
+        { "numero": "C9", "instrucao": "2 pb, aum, [4 pb, aum] 5x, 2 pb", "total": 36 },
+        { "numero": "C10", "instrucao": "[5 pb, aum] 6x", "total": 42 },
+        { "numero": "C11-C20", "instrucao": "pb em cada ponto ao redor", "total": 42 },
+        { "numero": "C21", "instrucao": "[5 pb, dim] 6x", "total": 36, "nota": "Posicione os olhos de segurança entre C13 e C14." },
+        { "numero": "C22", "instrucao": "Em FLO: [5 pb, aum] 6x", "total": 42 },
+        { "numero": "C23", "instrucao": "3 pb, aum, [6 pb, aum] 5x, 3 pb", "total": 48 },
+        { "numero": "C24", "instrucao": "[7 pb, aum] 6x", "total": 54 },
+        { "numero": "C25", "instrucao": "4 pb, aum, [8 pb, aum] 5x, 4 pb", "total": 60 },
+        { "numero": "C26", "instrucao": "[9 pb, aum] 6x", "total": 66 },
+        { "numero": "C27-C38", "instrucao": "pb em cada ponto ao redor", "total": 66 },
+        { "numero": "C39", "instrucao": "[9 pb, dim] 6x", "total": 60 },
+        { "numero": "C40", "instrucao": "4 pb, dim, [8 pb, dim] 5x, 4 pb", "total": 54 },
+        { "numero": "C41", "instrucao": "[7 pb, dim] 6x", "total": 48 },
+        { "numero": "C42", "instrucao": "3 pb, dim, [6 pb, dim] 5x, 3 pb", "total": 42 },
+        { "numero": "C43", "instrucao": "[5 pb, dim] 6x", "total": 36 },
+        { "numero": "C44", "instrucao": "2 pb, dim, [4 pb, dim] 5x, 2 pb", "total": 30 },
+        { "numero": "C45", "instrucao": "Encha bem a cabeça e o corpo com fibra de silicone. [3 pb, dim] 6x", "total": 24 },
+        { "numero": "C46", "instrucao": "1 pb, dim, [2 pb, dim] 5x, 1 pb", "total": 18 },
+        { "numero": "C47", "instrucao": "[1 pb, dim] 6x", "total": 12 },
+        { "numero": "C48", "instrucao": "[dim] 6x", "total": 6 }
       ],
-      "fechamento": "Corte o fio, feche o anel mágico invertido e esconda a ponta."
+      "fechamento": "Arremate, passe o fio pelas alças da frente dos 6 pontos restantes e puxe para fechar."
     },
     {
       "nome": "Orelhas",
       "quantidade": 2,
       "carreiras": [
-        { "numero": "C1", "instrucao": "Com fio preto: AM, 4 pb", "total": 4 },
-        { "numero": "C2", "instrucao": "*1 pb, aum* repita 2×", "total": 6 },
-        { "numero": "C3", "instrucao": "Mude para laranja: *1 pb, aum* repita 3×", "total": 9 },
-        { "numero": "C4", "instrucao": "*2 pb, aum* repita 3×", "total": 12 }
+        { "numero": "C1", "instrucao": "Com fio preto: 6 pb no AM", "total": 6 },
+        { "numero": "C2", "instrucao": "[1 pb, aum] 3x", "total": 9 },
+        { "numero": "C3", "instrucao": "Troque para Laranja: [2 pb, aum] 3x", "total": 12 },
+        { "numero": "C4", "instrucao": "[3 pb, aum] 3x", "total": 15 },
+        { "numero": "C5", "instrucao": "[4 pb, aum] 3x", "total": 18 },
+        { "numero": "C6", "instrucao": "pb em cada ponto", "total": 18 }
       ],
-      "fechamento": "Não rechear. Dobre ao meio, achate e deixe fio para costura."
+      "fechamento": "Não encha. Dobre a orelha ao meio, junte as bordas e faça pb unindo os lados. Arremate deixando fio longo para costurar."
+    },
+    {
+      "nome": "Patas Dianteiras (Braços)",
+      "quantidade": 2,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com fio preto: 6 pb no AM", "total": 6 },
+        { "numero": "C2", "instrucao": "[aum] 6x", "total": 12 },
+        { "numero": "C3-C5", "instrucao": "pb em cada ponto", "total": 12 },
+        { "numero": "C6", "instrucao": "Troque para Laranja: pb em cada ponto", "total": 12 },
+        { "numero": "C7", "instrucao": "[2 pb, dim] 3x", "total": 9 },
+        { "numero": "C8-C10", "instrucao": "pb em cada ponto", "total": 9 }
+      ],
+      "fechamento": "Encha levemente. Dobre a ponta e faça pb fechando a abertura. Arremate deixando fio."
+    },
+    {
+      "nome": "Patas Traseiras (Pernas)",
+      "quantidade": 2,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com fio preto: 6 pb no AM", "total": 6 },
+        { "numero": "C2", "instrucao": "[aum] 6x", "total": 12 },
+        { "numero": "C3", "instrucao": "[1 pb, aum] 6x", "total": 18 },
+        { "numero": "C4-C6", "instrucao": "pb em cada ponto", "total": 18 },
+        { "numero": "C7", "instrucao": "Troque para Laranja: pb em cada ponto", "total": 18 },
+        { "numero": "C8", "instrucao": "[4 pb, dim] 3x", "total": 15 },
+        { "numero": "C9", "instrucao": "[3 pb, dim] 3x", "total": 12 },
+        { "numero": "C10-C11", "instrucao": "pb em cada ponto", "total": 12 }
+      ],
+      "fechamento": "Encha levemente, dobre a borda e feche com pb. Arremate deixando fio."
     },
     {
       "nome": "Cauda",
       "quantidade": 1,
       "carreiras": [
-        { "numero": "C1", "instrucao": "Com fio branco: AM, 4 pb", "total": 4 },
-        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 8 },
-        { "numero": "C3", "instrucao": "*1 pb, aum* repita 4×", "total": 12 },
-        { "numero": "C4", "instrucao": "Mude para fio laranja: *2 pb, aum* repita 4×", "total": 16 },
-        { "numero": "C5–C8", "instrucao": "pb em cada ponto", "total": 16 },
-        { "numero": "C9", "instrucao": "*2 pb, dim* repita 4×", "total": 12 },
-        { "numero": "C10", "instrucao": "pb em cada ponto", "total": 12 },
-        { "numero": "C11", "instrucao": "*1 pb, dim* repita 4×", "total": 8 },
-        { "numero": "C12", "instrucao": "pb em cada ponto", "total": 8 }
+        { "numero": "C1", "instrucao": "Com fio creme: 6 pb no AM", "total": 6 },
+        { "numero": "C2", "instrucao": "[1 pb, aum] 3x", "total": 9 },
+        { "numero": "C3", "instrucao": "pb em cada ponto", "total": 9 },
+        { "numero": "C4", "instrucao": "[2 pb, aum] 3x", "total": 12 },
+        { "numero": "C5", "instrucao": "Troque para Laranja: pb em cada ponto", "total": 12 },
+        { "numero": "C6", "instrucao": "[3 pb, aum] 3x", "total": 15 },
+        { "numero": "C7", "instrucao": "[4 pb, aum] 3x", "total": 18 },
+        { "numero": "C8-C12", "instrucao": "pb em cada ponto", "total": 18 },
+        { "numero": "C13", "instrucao": "[4 pb, dim] 3x", "total": 15 },
+        { "numero": "C14", "instrucao": "pb em cada ponto", "total": 15 },
+        { "numero": "C15", "instrucao": "[3 pb, dim] 3x", "total": 12 },
+        { "numero": "C16", "instrucao": "pb em cada ponto", "total": 12 },
+        { "numero": "C17", "instrucao": "[2 pb, dim] 3x", "total": 9 },
+        { "numero": "C18", "instrucao": "pb em cada ponto", "total": 9 }
       ],
-      "fechamento": "Recheie levemente a base. Dobre ao meio e deixe fio longo para costurar."
+      "fechamento": "Encha a cauda. Dobre a borda superior e feche com pb. Arremate com fio longo."
     }
   ],
   "montagem": [
-    { "texto": "Costure as orelhas pretas no topo da cabeça, entre C3 e C5." },
-    { "texto": "Costure a cauda laranja e branca na parte traseira inferior para ajudar a raposa a se apoiar e ficar sentada." }
+    { "texto": "A cabeça e o corpo foram feitos juntos de uma vez só! Isso facilita muito e dá a forma redondinha da raposa." },
+    { "texto": "Costure as orelhas no topo da cabeça, posicionando-as entre as carreiras 4 e 9. Deixe um espaço de 5 pontos entre elas." },
+    { "texto": "Costure os braços nas laterais do corpo, logo abaixo da linha do pescoço (aproximadamente na carreira 24)." },
+    { "texto": "Anexe as pernas na parte inferior frontal do corpo (por volta da carreira 39/40) para que a raposa fique levemente inclinada para trás quando sentada." },
+    { "texto": "Costure a cauda na parte de trás, centralizada logo acima da base (por volta das carreiras 40 e 41), permitindo que ela funcione como um terceiro ponto de apoio para a raposa ficar sentada firme." }
   ],
   "acabamento": [
-    { "texto": "Usando fio preto, borde um pequeno triângulo no centro do rosto entre os olhos para fazer o focinho." }
+    { "texto": "Com um pouco de fio preto, borde um pequeno nariz triangular bem na ponta do focinho creme. Opcional: use um pouco de maquiagem ou giz pastel macio nas bochechas." }
   ]
 };
 
@@ -1820,7 +1870,8 @@ const harryPotter: Receita = {
     { "texto": "Borde os óculos com fio preto, a cicatriz em ziguezague vermelho e um pequeno sorriso." },
     { "texto": "Faça detalhes de camisa no peito do corpo usando vermelho e amarelo, escondidos sob a capa." },
     { "texto": "Amarre o cachecol no pescoço!" }
-  ]
+  ],
+  "acabamento": []
 };
 
 const hermioneGranger: Receita = {
