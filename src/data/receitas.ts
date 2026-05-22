@@ -1721,7 +1721,7 @@ const harryPotter: Receita = {
   "emoji": "⚡",
   "corCard": "#EED9C4",
   "imagemUrl": "/receitas/harry-potter/capa.jpg",
-  "videoUrl": "https://www.youtube.com/embed/3Wn-oX1-n0g",
+  "videoUrl": "https://www.youtube.com/embed/R9sW5CdQdkU",
   "materiais": [
     { "item": "Fio Amigurumi pele", "detalhe": "aprox. 20 g" },
     { "item": "Fio Amigurumi preto (cabelo, sapatos e capa)", "detalhe": "aprox. 30 g" },
