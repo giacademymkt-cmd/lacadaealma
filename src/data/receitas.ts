@@ -1713,106 +1713,113 @@ const tristeza: Receita = {
 
 const harryPotter: Receita = {
   "slug": "harry-potter",
-  "nome": "Harry Potter",
+  "nome": "Harry Potter (by Knot Bad)",
   "categoria": "personagens",
   "nivel": "intermediario",
-  "tamanhoFinal": "~12 cm",
-  "tempoEstimado": "4–5 horas",
+  "tamanhoFinal": "~15 cm",
+  "tempoEstimado": "4-5 horas",
   "emoji": "⚡",
   "corCard": "#EED9C4",
   "imagemUrl": "/receitas/harry-potter/capa.jpg",
-  "videoUrl": "https://www.youtube.com/embed/R9sW5CdQdkU",
   "materiais": [
-    { "item": "Fio Amigurumi pele", "detalhe": "aprox. 20 g" },
-    { "item": "Fio Amigurumi preto (cabelo, sapatos e capa)", "detalhe": "aprox. 30 g" },
-    { "item": "Fio Amigurumi cinza escuro (calça e suéter)", "detalhe": "aprox. 15 g" },
+    { "item": "Fio Amigurumi bege (pele)", "detalhe": "aprox. 20 g" },
+    { "item": "Fio Amigurumi preto (cabelo, sapatos, calça, capa)", "detalhe": "aprox. 30 g" },
+    { "item": "Fio Amigurumi cinza (suéter)", "detalhe": "aprox. 15 g" },
     { "item": "Fio Amigurumi vermelho e amarelo (cachecol)", "detalhe": "aprox. 10 g cada" },
-    { "item": "Fio bordado preto ou arame fino", "detalhe": "para os óculos" },
-    { "item": "Agulha de crochê", "detalhe": "2,5 mm" },
-    { "item": "Olhos de segurança pretos", "detalhe": "8 mm" }
+    { "item": "Fio Amigurumi marrom", "detalhe": "para a varinha" },
+    { "item": "Agulha de crochê", "detalhe": "4.0 mm (ou tamanho de preferência)" },
+    { "item": "Olhos de segurança pretos", "detalhe": "6 mm" },
+    { "item": "Fibra siliconada", "detalhe": "para enchimento" }
   ],
   "abreviacoes": [
     { "sigla": "AM", "significado": "Anel mágico" },
     { "sigla": "pb", "significado": "Ponto baixo" },
-    { "sigla": "aum", "significado": "Aumento" },
-    { "sigla": "dim", "significado": "Diminuição" },
-    { "sigla": "BLO", "significado": "Somente nas alças de trás" }
+    { "sigla": "aum", "significado": "Aumento (2 pb no mesmo ponto)" },
+    { "sigla": "dim", "significado": "Diminuição (2 pb fechados juntos)" },
+    { "sigla": "corr", "significado": "Correntinha" },
+    { "sigla": "FLO", "significado": "Somente nas alças da frente" }
   ],
   "notas": [
-    "A capa preta e o cachecol são peças separadas que podem ser removidas."
+    "Receita original escrita por Vincent do blog Knot Bad.",
+    "A cabeça e o corpo são tecidos em uma peça só (começando pela cabeça)."
   ],
   "partes": [
     {
-      "nome": "Cabeça",
+      "nome": "Cabeça / Corpo",
       "quantidade": 1,
       "carreiras": [
-        { "numero": "C1", "instrucao": "Com fio cor de pele: AM, 6 pb", "total": 6 },
-        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
-        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
-        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
-        { "numero": "C5", "instrucao": "*3 pb, aum* repita 6×", "total": 30 },
-        { "numero": "C6", "instrucao": "*4 pb, aum* repita 6×", "total": 36 },
-        { "numero": "C7–C13", "instrucao": "pb em cada ponto", "total": 36, "nota": "Posicionar olhos entre C10 e C11 com 6 pontos de espaço." },
-        { "numero": "C14", "instrucao": "*4 pb, dim* repita 6×", "total": 30 },
-        { "numero": "C15", "instrucao": "*3 pb, dim* repita 6×", "total": 24 },
-        { "numero": "C16", "instrucao": "*2 pb, dim* repita 6×", "total": 18 },
-        { "numero": "C17", "instrucao": "*1 pb, dim* repita 6×", "total": 12 }
+        { "numero": "C1", "instrucao": "Com fio bege: 6 pb no AM", "total": 6 },
+        { "numero": "C2", "instrucao": "[aum] 6x", "total": 12 },
+        { "numero": "C3", "instrucao": "[1 pb, aum] 6x", "total": 18 },
+        { "numero": "C4", "instrucao": "[2 pb, aum] 6x", "total": 24 },
+        { "numero": "C5", "instrucao": "[3 pb, aum] 6x", "total": 30 },
+        { "numero": "C6", "instrucao": "[4 pb, aum] 6x", "total": 36 },
+        { "numero": "C7", "instrucao": "[5 pb, aum] 6x", "total": 42 },
+        { "numero": "C8-C14", "instrucao": "pb em cada ponto ao redor", "total": 42, "nota": "Insira os olhos de segurança na carreira 12, com 8 pontos de distância entre eles. Comece a encher firmemente a cabeça." },
+        { "numero": "C15", "instrucao": "[5 pb, dim] 6x", "total": 36 },
+        { "numero": "C16", "instrucao": "[4 pb, dim] 6x", "total": 30 },
+        { "numero": "C17", "instrucao": "[3 pb, dim] 6x", "total": 24 },
+        { "numero": "C18", "instrucao": "[2 pb, dim] 6x", "total": 18 },
+        { "numero": "C19", "instrucao": "Troque para fio cinza. Em FLO (alças da frente): [aum] em cada ponto", "total": 36, "nota": "Continue enchendo a cabeça firmemente." },
+        { "numero": "C20-C23", "instrucao": "pb em cada ponto ao redor", "total": 36 },
+        { "numero": "C24", "instrucao": "Troque para fio preto. pb em cada ponto", "total": 36 },
+        { "numero": "C25", "instrucao": "[4 pb, dim] 6x", "total": 30 },
+        { "numero": "C26", "instrucao": "[3 pb, dim] 6x", "total": 24, "nota": "Comece a encher o corpo (não encha muito firme para ele conseguir ficar sentado!)." },
+        { "numero": "C27", "instrucao": "[2 pb, dim] 6x", "total": 18 },
+        { "numero": "C28", "instrucao": "[1 pb, dim] 6x", "total": 12 }
       ],
-      "fechamento": "Recheie firmemente a cabeça e deixe fio longo para costurar no corpo."
+      "fechamento": "Arremate e deixe um fio longo para fechar o buraco com agulha de tapeçaria."
     },
     {
-      "nome": "Corpo (Começando pelas Pernas)",
-      "quantidade": 1,
+      "nome": "Braços",
+      "quantidade": 2,
       "carreiras": [
-        { "numero": "C1", "instrucao": "Com fio preto (sapato): AM, 6 pb", "total": 6 },
-        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
-        { "numero": "C3", "instrucao": "BLO: pb em cada ponto", "total": 12 },
-        { "numero": "C4", "instrucao": "Troque para cinza escuro (calça): pb em cada ponto", "total": 12 },
-        { "numero": "C5–C6", "instrucao": "pb em cada ponto. Arremate a primeira perna. Faça a segunda perna igual, mas não corte o fio e junte com 2 correntinhas.", "total": 12 },
-        { "numero": "C7", "instrucao": "pb nos 12 pts da perna 1, 2 pb nas correntes, pb nos 12 pts da perna 2, 2 pb nas correntes", "total": 28 },
-        { "numero": "C8–C10", "instrucao": "pb em cada ponto", "total": 28 },
-        { "numero": "C11", "instrucao": "Troque para cinza (suéter) BLO: pb em cada ponto", "total": 28 },
-        { "numero": "C12", "instrucao": "*5 pb, dim* repita 4×", "total": 24 },
-        { "numero": "C13–C14", "instrucao": "pb em cada ponto", "total": 24 },
-        { "numero": "C15", "instrucao": "*2 pb, dim* repita 6×", "total": 18 },
-        { "numero": "C16", "instrucao": "*1 pb, dim* repita 6×", "total": 12 }
+        { "numero": "C1", "instrucao": "Com fio bege: 6 pb no AM", "total": 6 },
+        { "numero": "C2", "instrucao": "[aum] 6x", "total": 12 },
+        { "numero": "C3-C4", "instrucao": "Troque para preto. pb em cada ponto", "total": 12 }
       ],
-      "fechamento": "Recheie bem o corpo."
+      "fechamento": "Arremate deixando fio longo para costurar."
     },
     {
-      "nome": "Cabelo",
-      "quantidade": 1,
+      "nome": "Pés",
+      "quantidade": 2,
       "carreiras": [
-        { "numero": "C1", "instrucao": "Com fio preto: AM, 6 pb", "total": 6 },
-        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
-        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
-        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
-        { "numero": "C5", "instrucao": "*3 pb, aum* repita 6×", "total": 30 },
-        { "numero": "C6", "instrucao": "*4 pb, aum* repita 6×", "total": 36 },
-        { "numero": "C7–C11", "instrucao": "pb em cada ponto", "total": 36 },
-        { "numero": "Franja", "instrucao": "Para a franja (fios irregulares): *Faça 5 corr, volte 4 pb*, repita 3 vezes, fixe com pbx. *Faça 3 corr, volte 2 pb* repita 2 vezes.", "total": 0 }
+        { "numero": "C1", "instrucao": "Com fio preto: 6 pb no AM", "total": 6 },
+        { "numero": "C2", "instrucao": "[aum] 6x", "total": 12 },
+        { "numero": "C3-C5", "instrucao": "pb em cada ponto", "total": 12 }
       ],
-      "fechamento": "Deixe fio longo para costurar ou colar o cabelo no topo da cabeça."
+      "fechamento": "Arremate deixando fio longo para costurar."
     },
     {
       "nome": "Cachecol",
       "quantidade": 1,
       "carreiras": [
-        { "numero": "C1", "instrucao": "Em crochê plano: 40 correntes em vermelho", "total": 40 },
-        { "numero": "C2", "instrucao": "Volte com meio ponto alto (mpa) a partir da 3ª corrente.", "total": 38 },
-        { "numero": "Listras", "instrucao": "Borde linhas amarelas a cada 4 pontos no cachecol finalizado usando agulha de tapeceiro.", "total": 0 }
+        { "numero": "C1", "instrucao": "Com vermelho: 3 corr. pb na 2ª corr a partir da agulha, pb no próximo", "total": 2 },
+        { "numero": "C2-C4", "instrucao": "1 corr, vire. pb em cada ponto", "total": 2 },
+        { "numero": "C5-C8", "instrucao": "Troque para amarelo. 1 corr, vire. pb em cada ponto", "total": 2 },
+        { "numero": "C9-C12", "instrucao": "Troque para vermelho. 1 corr, vire. pb em cada ponto", "total": 2 }
       ],
-      "fechamento": "Arrematar fios e adicionar pequenas franjas vermelhas nas pontas."
+      "fechamento": "Repita o padrão alternando as cores a cada 4 carreiras até obter 8 blocos vermelhos e 8 amarelos. Ao final, faça franjas com fios vermelhos e amarelos nas pontas."
+    },
+    {
+      "nome": "Varinha e Capa",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "Varinha", "instrucao": "Com marrom: Puxe um fio direto da mão do boneco (costuma ser a direita). Faça 5 corr, pb na 2ª corr e nas próximas voltando para a mão. Arremate.", "total": 0 },
+        { "numero": "Capa C1", "instrucao": "Com preto: Faça 36 corr. pb na 2ª corr a partir da agulha, e pb nos próximos", "total": 35 },
+        { "numero": "Capa C2-C8", "instrucao": "1 corr, vire. pb em cada ponto", "total": 35 }
+      ],
+      "fechamento": "Arremate deixando fio para costura."
     }
   ],
   "montagem": [
-    { "texto": "Costure a cabeça no corpo." },
-    { "texto": "Prenda o cabelo preto no topo da cabeça. Deixe a franja cair para o lado direito." },
-    { "texto": "Borde a cicatriz de raio vermelha na testa, do lado esquerdo." },
-    { "texto": "Borde óculos pretos ao redor dos olhos, ou cole óculos de arame fino no rosto." }
-  ],
-  "acabamento": [
-    { "texto": "Enrole o cachecol listrado no pescoço do boneco." }
+    { "texto": "A primeira coisa a prender no corpo é a capa preta. Enrole-a ao redor do corpo e costure os dois pontos de cima juntos, deixando a parte inferior aberta no formato de um triângulo." },
+    { "texto": "Anexe os pés na abertura frontal da capa." },
+    { "texto": "Costure os braços na parte superior, por cima da capa preta." },
+    { "texto": "Para o cabelo, corte vários pedaços longos de fio preto e puxe um por um com a agulha em cada ponto da cabeça (no formato desejado)." },
+    { "texto": "Borde os óculos com fio preto, a cicatriz em ziguezague vermelho e um pequeno sorriso." },
+    { "texto": "Faça detalhes de camisa no peito do corpo usando vermelho e amarelo, escondidos sob a capa." },
+    { "texto": "Amarre o cachecol no pescoço!" }
   ]
 };
 
