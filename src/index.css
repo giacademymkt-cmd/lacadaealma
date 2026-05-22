@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-beige text-brand-dark overflow-x-hidden antialiased;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/40 backdrop-blur-xl border border-white/60 shadow-xl;
+}
+
+/* ─────────────────────────────────────────────
+   ESTILOS DE IMPRESSÃO / PDF
+   ───────────────────────────────────────────── */
+@media print {
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  body { background: white !important; font-family: 'Outfit', sans-serif; color: #3F3935; }
+
+  .print-page {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  .print-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #D6A8A8;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+  }
+
+  .print-brand {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #8C827A;
+    margin-bottom: 4px;
+  }
+
+  .print-title {
+    font-family: 'Lora', serif;
+    font-size: 22pt;
+    font-weight: 700;
+    color: #3F3935;
+    margin: 0 0 8px 0;
+  }
+
+  .print-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .print-badges span {
+    background: #FBE8E8;
+    color: #3F3935;
+    font-size: 8pt;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid #D6A8A8;
+  }
+
+  .print-emoji {
+    font-size: 48pt;
+    line-height: 1;
+  }
+
+  .print-section {
+    margin-bottom: 20px;
+    page-break-inside: avoid;
+  }
+
+  .print-section h2 {
+    font-family: 'Lora', serif;
+    font-size: 13pt;
+    font-weight: 700;
+    color: #3F3935;
+    border-bottom: 1px solid #E3E8E1;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+  }
+
+  .print-list {
+    padding-left: 16px;
+    margin: 0;
+  }
+
+  .print-list li {
+    margin-bottom: 4px;
+    font-size: 10pt;
+  }
+
+  .print-notes li {
+    background: #FFF8DC;
+    border-left: 3px solid #F59E0B;
+    padding: 4px 8px;
+    margin-bottom: 4px;
+    border-radius: 0 4px 4px 0;
+    list-style: none;
+  }
+
+  .print-abbr-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+
+  .print-abbr-item {
+    font-size: 9pt;
+    padding: 3px 6px;
+    background: #FAFAFA;
+    border-radius: 4px;
+  }
+
+  .print-abbr-item code {
+    font-weight: 700;
+    background: #FBE8E8;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-right: 4px;
+  }
+
+  .print-parte {
+    margin-bottom: 16px;
+    page-break-inside: avoid;
+  }
+
+  .print-parte h3 {
+    font-family: 'Lora', serif;
+    font-size: 11pt;
+    font-weight: 700;
+    background: #FBE8E8;
+    padding: 5px 10px;
+    border-radius: 6px 6px 0 0;
+    margin: 0;
+    color: #3F3935;
+  }
+
+  .print-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5pt;
+    border: 1px solid #E8D5D5;
+  }
+
+  .print-table thead tr {
+    background: #F5EDD8;
+  }
+
+  .print-table th {
+    padding: 5px 8px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #D6A8A8;
+  }
+
+  .print-table td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #F0E8E8;
+    vertical-align: top;
+  }
+
+  .print-row-alt td { background: #FDF8F8; }
+
+  .print-cell-num {
+    font-family: monospace;
+    font-weight: 700;
+    color: #C97A9B;
+    white-space: nowrap;
+    width: 60px;
+  }
+
+  .print-cell-total {
+    font-weight: 700;
+    text-align: center;
+    width: 50px;
+    color: #3F3935;
+  }
+
+  .print-note-row td {
+    background: #FFF8DC !important;
+    border-left: 3px solid #F59E0B;
+    font-size: 8.5pt;
+    color: #92400E;
+    padding: 3px 8px;
+  }
+
+  .print-row-close td {
+    background: #E3E8E1;
+    font-style: italic;
+    font-size: 9pt;
+    color: #4B5563;
+  }
+
+  .print-footer {
+    margin-top: 24px;
+    border-top: 1px solid #E3E8E1;
+    padding-top: 8px;
+    font-size: 8pt;
+    color: #8C827A;
+    text-align: center;
+  }
+}
