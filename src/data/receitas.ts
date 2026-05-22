@@ -1125,192 +1125,82 @@ const raposaChubby: Receita = {
   "imagemUrl": "/receitas/raposa-chubby/capa.jpg",
   "videoUrl": "https://www.youtube.com/embed/UM7Evk8nhPQ",
   "materiais": [
-    {
-      "item": "Fio Amigurumi laranja (cor principal)",
-      "detalhe": "aprox. 40 g"
-    },
-    {
-      "item": "Fio Amigurumi branco (peito e bochechas)",
-      "detalhe": "aprox. 15 g"
-    },
-    {
-      "item": "Fio Amigurumi preto (patas e orelhas)",
-      "detalhe": "aprox. 10 g"
-    },
-    {
-      "item": "Agulha de crochê",
-      "detalhe": "3,0 mm"
-    },
-    {
-      "item": "Olhos de segurança pretos",
-      "detalhe": "8 mm — 1 par"
-    },
-    {
-      "item": "Fibra siliconada",
-      "detalhe": "para recheio"
-    },
-    {
-      "item": "Agulha de tapeceiro",
-      "detalhe": "para costura e acabamento"
-    }
+    { "item": "Fio Amigurumi laranja (cor principal)", "detalhe": "aprox. 40 g" },
+    { "item": "Fio Amigurumi branco (peito e cauda)", "detalhe": "aprox. 15 g" },
+    { "item": "Fio Amigurumi preto (orelhas e patas)", "detalhe": "aprox. 10 g" },
+    { "item": "Agulha de crochê", "detalhe": "3,0 mm" },
+    { "item": "Olhos de segurança pretos", "detalhe": "8 mm — 1 par" },
+    { "item": "Fibra siliconada", "detalhe": "para recheio" },
+    { "item": "Agulha de tapeceiro", "detalhe": "para costura" }
   ],
   "abreviacoes": [
-    {
-      "sigla": "AM",
-      "significado": "Anel mágico"
-    },
-    {
-      "sigla": "pb",
-      "significado": "Ponto baixo"
-    },
-    {
-      "sigla": "aum",
-      "significado": "Aumento — 2 pb no mesmo ponto"
-    },
-    {
-      "sigla": "dim",
-      "significado": "Diminuição"
-    },
-    {
-      "sigla": "pbx",
-      "significado": "Ponto baixíssimo"
-    }
+    { "sigla": "AM", "significado": "Anel mágico" },
+    { "sigla": "pb", "significado": "Ponto baixo" },
+    { "sigla": "aum", "significado": "Aumento — 2 pb no mesmo ponto" },
+    { "sigla": "dim", "significado": "Diminuição" }
   ],
   "notas": [
     "Trabalhe em espiral contínua.",
-    "Troque de cor no último ponto da carreira anterior."
+    "Troque de cor no último ponto da carreira anterior para transições invisíveis."
   ],
   "partes": [
     {
-      "nome": "Cabeça e Corpo",
+      "nome": "Cabeça e Corpo (Peça Única)",
       "quantidade": 1,
       "carreiras": [
-        {
-          "numero": "C1",
-          "instrucao": "AM, 6 pb (laranja)",
-          "total": 6,
-          "fotoUrl": "/receitas/raposa-chubby/passo_c1.jpg"
-        },
-        {
-          "numero": "C2",
-          "instrucao": "aum em cada ponto",
-          "total": 12
-        },
-        {
-          "numero": "C3",
-          "instrucao": "*1 pb, aum* repita 6×",
-          "total": 18
-        },
-        {
-          "numero": "C4",
-          "instrucao": "*2 pb, aum* repita 6×",
-          "total": 24
-        },
-        {
-          "numero": "C5",
-          "instrucao": "*3 pb, aum* repita 6×",
-          "total": 30
-        },
-        {
-          "numero": "C6–C12",
-          "instrucao": "pb em cada ponto",
-          "total": 30,
-          "nota": "⚠️ Posicionar olhos entre C9-C10 com 6 pontos de espaço."
-        },
-        {
-          "numero": "C13",
-          "instrucao": "*3 pb, dim* repita 6×",
-          "total": 24
-        },
-        {
-          "numero": "C14",
-          "instrucao": "*2 pb, dim* repita 6× (início corpo)",
-          "total": 18
-        },
-        {
-          "numero": "C15",
-          "instrucao": "*2 pb, aum* repita 6×",
-          "total": 24
-        },
-        {
-          "numero": "C16–C20",
-          "instrucao": "pb em cada ponto",
-          "total": 24
-        },
-        {
-          "numero": "C21",
-          "instrucao": "*2 pb, dim* repita 6×",
-          "total": 18
-        },
-        {
-          "numero": "C22",
-          "instrucao": "*1 pb, dim* repita 6×",
-          "total": 12,
-          "nota": "⚠️ Rechear bem."
-        },
-        {
-          "numero": "C23",
-          "instrucao": "dim 6×",
-          "total": 6
-        }
+        { "numero": "C1", "instrucao": "Com fio laranja: AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
+        { "numero": "C5", "instrucao": "*3 pb, aum* repita 6×", "total": 30 },
+        { "numero": "C6", "instrucao": "*4 pb, aum* repita 6×", "total": 36 },
+        { "numero": "C7–C13", "instrucao": "pb em cada ponto", "total": 36, "nota": "Posicionar olhos entre C10 e C11 com 7 pontos de distância." },
+        { "numero": "C14", "instrucao": "*4 pb, dim* repita 6×", "total": 30 },
+        { "numero": "C15", "instrucao": "*3 pb, dim* repita 6×", "total": 24 },
+        { "numero": "C16", "instrucao": "*2 pb, dim* repita 6× (início do corpo)", "total": 18 },
+        { "numero": "C17", "instrucao": "Mude para fio branco na frente para o peito: 6 pb laranja, 6 pb branco, 6 pb laranja", "total": 18 },
+        { "numero": "C18", "instrucao": "6 pb laranja, aum, 4 pb branco, aum, 6 pb laranja", "total": 20 },
+        { "numero": "C19", "instrucao": "pb em cada ponto mantendo as cores estabelecidas", "total": 20 },
+        { "numero": "C20", "instrucao": "Com fio laranja apenas: *3 pb, dim* repita 4×", "total": 16 },
+        { "numero": "C21", "instrucao": "*2 pb, dim* repita 4×", "total": 12, "nota": "Rechear firmemente o corpo e a cabeça." },
+        { "numero": "C22", "instrucao": "dim 6×", "total": 6 }
       ],
-      "fechamento": "Fechar o anel invertido e esconder o fio."
+      "fechamento": "Corte o fio, feche o anel mágico invertido e esconda a ponta."
+    },
+    {
+      "nome": "Orelhas",
+      "quantidade": 2,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com fio preto: AM, 4 pb", "total": 4 },
+        { "numero": "C2", "instrucao": "*1 pb, aum* repita 2×", "total": 6 },
+        { "numero": "C3", "instrucao": "Mude para laranja: *1 pb, aum* repita 3×", "total": 9 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 3×", "total": 12 }
+      ],
+      "fechamento": "Não rechear. Dobre ao meio, achate e deixe fio para costura."
     },
     {
       "nome": "Cauda",
       "quantidade": 1,
       "carreiras": [
-        {
-          "numero": "C1",
-          "instrucao": "AM, 4 pb (com fio branco)",
-          "total": 4
-        },
-        {
-          "numero": "C2",
-          "instrucao": "aum em cada ponto",
-          "total": 8
-        },
-        {
-          "numero": "C3",
-          "instrucao": "pb em cada ponto",
-          "total": 8
-        },
-        {
-          "numero": "C4",
-          "instrucao": "*1 pb, aum* repita 4× (laranja)",
-          "total": 12
-        },
-        {
-          "numero": "C5–C9",
-          "instrucao": "pb em cada ponto",
-          "total": 12
-        },
-        {
-          "numero": "C10",
-          "instrucao": "*1 pb, dim* repita 4×",
-          "total": 8
-        }
+        { "numero": "C1", "instrucao": "Com fio branco: AM, 4 pb", "total": 4 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 8 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 4×", "total": 12 },
+        { "numero": "C4", "instrucao": "Mude para fio laranja: *2 pb, aum* repita 4×", "total": 16 },
+        { "numero": "C5–C8", "instrucao": "pb em cada ponto", "total": 16 },
+        { "numero": "C9", "instrucao": "*2 pb, dim* repita 4×", "total": 12 },
+        { "numero": "C10", "instrucao": "pb em cada ponto", "total": 12 },
+        { "numero": "C11", "instrucao": "*1 pb, dim* repita 4×", "total": 8 },
+        { "numero": "C12", "instrucao": "pb em cada ponto", "total": 8 }
       ],
-      "fechamento": "Rechear de leve. Achatar e deixar fio para costurar."
+      "fechamento": "Recheie levemente a base. Dobre ao meio e deixe fio longo para costurar."
     }
   ],
   "montagem": [
-    {
-      "texto": "Costure as bochechas brancas de feltro ou crochê na face, logo abaixo dos olhos de segurança.",
-      "fotoUrl": "/receitas/raposa-chubby/montagem_1.jpg"
-    },
-    {
-      "texto": "Costure as orelhas pretas no topo da cabeça, entre C3 e C5.",
-      "fotoUrl": "/receitas/raposa-chubby/montagem_2.jpg"
-    },
-    {
-      "texto": "Costure a cauda na parte traseira inferior para ajudar a manter o amigurumi em pé."
-    }
+    { "texto": "Costure as orelhas pretas no topo da cabeça, entre C3 e C5." },
+    { "texto": "Costure a cauda laranja e branca na parte traseira inferior para ajudar a raposa a se apoiar e ficar sentada." }
   ],
   "acabamento": [
-    {
-      "texto": "Borde o focinho com fio preto bem no centro, abaixo dos olhos."
-    }
+    { "texto": "Usando fio preto, borde um pequeno triângulo no centro do rosto entre os olhos para fazer o focinho." }
   ]
 };
 
@@ -1831,111 +1721,98 @@ const harryPotter: Receita = {
   "emoji": "⚡",
   "corCard": "#EED9C4",
   "imagemUrl": "/receitas/harry-potter/capa.jpg",
+  "videoUrl": "https://www.youtube.com/embed/3Wn-oX1-n0g",
   "materiais": [
-    {
-      "item": "Fio Amigurumi cor pele (cabeça e mãos)",
-      "detalhe": "aprox. 20 g"
-    },
-    {
-      "item": "Fio Amigurumi preto (cabelo, calça e capa)",
-      "detalhe": "aprox. 30 g"
-    },
-    {
-      "item": "Fio Amigurumi cinza (suéter do uniforme)",
-      "detalhe": "aprox. 15 g"
-    },
-    {
-      "item": "Fio Amigurumi vermelho e amarelo (cachecol)",
-      "detalhe": "aprox. 10 g cada"
-    },
-    {
-      "item": "Fio preto e arame fino (óculos)",
-      "detalhe": "opcional"
-    },
-    {
-      "item": "Agulha de crochê",
-      "detalhe": "2,5 mm"
-    }
+    { "item": "Fio Amigurumi pele", "detalhe": "aprox. 20 g" },
+    { "item": "Fio Amigurumi preto (cabelo, sapatos e capa)", "detalhe": "aprox. 30 g" },
+    { "item": "Fio Amigurumi cinza escuro (calça e suéter)", "detalhe": "aprox. 15 g" },
+    { "item": "Fio Amigurumi vermelho e amarelo (cachecol)", "detalhe": "aprox. 10 g cada" },
+    { "item": "Fio bordado preto ou arame fino", "detalhe": "para os óculos" },
+    { "item": "Agulha de crochê", "detalhe": "2,5 mm" },
+    { "item": "Olhos de segurança pretos", "detalhe": "8 mm" }
   ],
   "abreviacoes": [
-    {
-      "sigla": "AM",
-      "significado": "Anel mágico"
-    },
-    {
-      "sigla": "pb",
-      "significado": "Ponto baixo"
-    },
-    {
-      "sigla": "aum",
-      "significado": "Aumento"
-    }
+    { "sigla": "AM", "significado": "Anel mágico" },
+    { "sigla": "pb", "significado": "Ponto baixo" },
+    { "sigla": "aum", "significado": "Aumento" },
+    { "sigla": "dim", "significado": "Diminuição" },
+    { "sigla": "BLO", "significado": "Somente nas alças de trás" }
   ],
   "notas": [
-    "O cachecol é feito em crochê plano alternando as cores a cada duas carreiras."
+    "A capa preta e o cachecol são peças separadas que podem ser removidas."
   ],
   "partes": [
     {
       "nome": "Cabeça",
       "quantidade": 1,
       "carreiras": [
-        {
-          "numero": "C1",
-          "instrucao": "AM, 6 pb (pele)",
-          "total": 6
-        },
-        {
-          "numero": "C2",
-          "instrucao": "aum em cada ponto",
-          "total": 12
-        },
-        {
-          "numero": "C3",
-          "instrucao": "*1 pb, aum* repita 6×",
-          "total": 18
-        },
-        {
-          "numero": "C4",
-          "instrucao": "*2 pb, aum* repita 6×",
-          "total": 24
-        },
-        {
-          "numero": "C5–C10",
-          "instrucao": "pb em cada ponto",
-          "total": 24
-        },
-        {
-          "numero": "C11",
-          "instrucao": "*2 pb, dim* repita 6×",
-          "total": 18
-        },
-        {
-          "numero": "C12",
-          "instrucao": "*1 pb, dim* repita 6×",
-          "total": 12
-        }
+        { "numero": "C1", "instrucao": "Com fio cor de pele: AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
+        { "numero": "C5", "instrucao": "*3 pb, aum* repita 6×", "total": 30 },
+        { "numero": "C6", "instrucao": "*4 pb, aum* repita 6×", "total": 36 },
+        { "numero": "C7–C13", "instrucao": "pb em cada ponto", "total": 36, "nota": "Posicionar olhos entre C10 e C11 com 6 pontos de espaço." },
+        { "numero": "C14", "instrucao": "*4 pb, dim* repita 6×", "total": 30 },
+        { "numero": "C15", "instrucao": "*3 pb, dim* repita 6×", "total": 24 },
+        { "numero": "C16", "instrucao": "*2 pb, dim* repita 6×", "total": 18 },
+        { "numero": "C17", "instrucao": "*1 pb, dim* repita 6×", "total": 12 }
       ],
-      "fechamento": "Rechear e deixar fio longo para prender."
+      "fechamento": "Recheie firmemente a cabeça e deixe fio longo para costurar no corpo."
+    },
+    {
+      "nome": "Corpo (Começando pelas Pernas)",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com fio preto (sapato): AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "BLO: pb em cada ponto", "total": 12 },
+        { "numero": "C4", "instrucao": "Troque para cinza escuro (calça): pb em cada ponto", "total": 12 },
+        { "numero": "C5–C6", "instrucao": "pb em cada ponto. Arremate a primeira perna. Faça a segunda perna igual, mas não corte o fio e junte com 2 correntinhas.", "total": 12 },
+        { "numero": "C7", "instrucao": "pb nos 12 pts da perna 1, 2 pb nas correntes, pb nos 12 pts da perna 2, 2 pb nas correntes", "total": 28 },
+        { "numero": "C8–C10", "instrucao": "pb em cada ponto", "total": 28 },
+        { "numero": "C11", "instrucao": "Troque para cinza (suéter) BLO: pb em cada ponto", "total": 28 },
+        { "numero": "C12", "instrucao": "*5 pb, dim* repita 4×", "total": 24 },
+        { "numero": "C13–C14", "instrucao": "pb em cada ponto", "total": 24 },
+        { "numero": "C15", "instrucao": "*2 pb, dim* repita 6×", "total": 18 },
+        { "numero": "C16", "instrucao": "*1 pb, dim* repita 6×", "total": 12 }
+      ],
+      "fechamento": "Recheie bem o corpo."
+    },
+    {
+      "nome": "Cabelo",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com fio preto: AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
+        { "numero": "C5", "instrucao": "*3 pb, aum* repita 6×", "total": 30 },
+        { "numero": "C6", "instrucao": "*4 pb, aum* repita 6×", "total": 36 },
+        { "numero": "C7–C11", "instrucao": "pb em cada ponto", "total": 36 },
+        { "numero": "Franja", "instrucao": "Para a franja (fios irregulares): *Faça 5 corr, volte 4 pb*, repita 3 vezes, fixe com pbx. *Faça 3 corr, volte 2 pb* repita 2 vezes.", "total": 0 }
+      ],
+      "fechamento": "Deixe fio longo para costurar ou colar o cabelo no topo da cabeça."
+    },
+    {
+      "nome": "Cachecol",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Em crochê plano: 40 correntes em vermelho", "total": 40 },
+        { "numero": "C2", "instrucao": "Volte com meio ponto alto (mpa) a partir da 3ª corrente.", "total": 38 },
+        { "numero": "Listras", "instrucao": "Borde linhas amarelas a cada 4 pontos no cachecol finalizado usando agulha de tapeceiro.", "total": 0 }
+      ],
+      "fechamento": "Arrematar fios e adicionar pequenas franjas vermelhas nas pontas."
     }
   ],
   "montagem": [
-    {
-      "texto": "Costure o cabelo preto com fios texturizados no topo da cabeça."
-    },
-    {
-      "texto": "Borde a cicatriz em formato de raio na testa com linha vermelha."
-    },
-    {
-      "texto": "Monte os óculos pretos usando feltro, linha ou arame fino e prenda na face."
-    },
-    {
-      "texto": "Costure o corpo e enrole o mini cachecol listrado Grifinória ao redor do pescoço."
-    }
+    { "texto": "Costure a cabeça no corpo." },
+    { "texto": "Prenda o cabelo preto no topo da cabeça. Deixe a franja cair para o lado direito." },
+    { "texto": "Borde a cicatriz de raio vermelha na testa, do lado esquerdo." },
+    { "texto": "Borde óculos pretos ao redor dos olhos, ou cole óculos de arame fino no rosto." }
   ],
   "acabamento": [
-    {
-      "texto": "Ajuste os detalhes e esconda os fios sob a capa preta nas costas."
-    }
+    { "texto": "Enrole o cachecol listrado no pescoço do boneco." }
   ]
 };
 
@@ -2679,7 +2556,7 @@ const zumbiTwd: Receita = {
 
 const mario: Receita = {
   "slug": "mario",
-  "nome": "Mario",
+  "nome": "Mario Bros",
   "categoria": "videogames",
   "nivel": "intermediario",
   "tamanhoFinal": "~14 cm",
@@ -2687,94 +2564,98 @@ const mario: Receita = {
   "emoji": "🧑‍🔧",
   "corCard": "#F5E3E3",
   "imagemUrl": "/receitas/mario/capa.jpg",
+  "videoUrl": "https://www.youtube.com/embed/orQv1VyFCnY",
   "materiais": [
-    {
-      "item": "Fio Amigurumi vermelho (blusa e chapéu)",
-      "detalhe": "aprox. 30 g"
-    },
-    {
-      "item": "Fio Amigurumi azul (macacão)",
-      "detalhe": "aprox. 25 g"
-    },
-    {
-      "item": "Fio Amigurumi pele (cabeça)",
-      "detalhe": "aprox. 20 g"
-    },
-    {
-      "item": "Fio preto (bigode) e amarelo (botões)",
-      "detalhe": "aprox. 5 g cada"
-    },
-    {
-      "item": "Agulha de crochê",
-      "detalhe": "2,5 mm"
-    }
+    { "item": "Fio Amigurumi vermelho (camisa e chapéu)", "detalhe": "aprox. 30 g" },
+    { "item": "Fio Amigurumi azul (macacão)", "detalhe": "aprox. 25 g" },
+    { "item": "Fio Amigurumi cor da pele (rosto e mãos)", "detalhe": "aprox. 20 g" },
+    { "item": "Fio Amigurumi marrom (sapatos e cabelo/bigode)", "detalhe": "aprox. 15 g" },
+    { "item": "Fio Amigurumi amarelo (botões)", "detalhe": "aprox. 5 g" },
+    { "item": "Agulha de crochê", "detalhe": "2,5 mm" },
+    { "item": "Olhos de segurança", "detalhe": "8 mm pretos" }
   ],
   "abreviacoes": [
-    {
-      "sigla": "AM",
-      "significado": "Anel mágico"
-    },
-    {
-      "sigla": "pb",
-      "significado": "Ponto baixo"
-    }
+    { "sigla": "AM", "significado": "Anel mágico" },
+    { "sigla": "pb", "significado": "Ponto baixo" },
+    { "sigla": "aum", "significado": "Aumento" },
+    { "sigla": "dim", "significado": "Diminuição" }
   ],
   "notas": [
-    "O macacão azul possui alças costuradas do peito às costas sobre os ombros vermelhos."
+    "A base do corpo é iniciada pelas pernas e o macacão é trocado durante a construção do corpo."
   ],
   "partes": [
+    {
+      "nome": "Pernas e Corpo",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com fio marrom (sapatos): AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "BLO: pb em cada ponto", "total": 12 },
+        { "numero": "C4", "instrucao": "pb em cada ponto", "total": 12 },
+        { "numero": "C5", "instrucao": "Mude para fio azul (calça): pb em cada ponto. Arremate a Perna 1. Faça a Perna 2 e junte com 2 corr.", "total": 12 },
+        { "numero": "C6", "instrucao": "Junte as pernas: pb nos 12 pts da Perna 1, 2 pb nas corr, pb nos 12 pts da Perna 2, 2 pb nas corr", "total": 28 },
+        { "numero": "C7–C9", "instrucao": "Com fio azul: pb em cada ponto", "total": 28 },
+        { "numero": "C10", "instrucao": "Mude para fio vermelho (camisa) BLO: pb em cada ponto", "total": 28 },
+        { "numero": "C11–C13", "instrucao": "Com fio vermelho: pb em cada ponto", "total": 28 },
+        { "numero": "C14", "instrucao": "*5 pb, dim* repita 4×", "total": 24 },
+        { "numero": "C15", "instrucao": "*2 pb, dim* repita 6×", "total": 18 },
+        { "numero": "C16", "instrucao": "*1 pb, dim* repita 6×", "total": 12 }
+      ],
+      "fechamento": "Rechear o corpo firme e deixar fio vermelho."
+    },
+    {
+      "nome": "Cabeça",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Fio pele: AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
+        { "numero": "C5", "instrucao": "*3 pb, aum* repita 6×", "total": 30 },
+        { "numero": "C6", "instrucao": "*4 pb, aum* repita 6×", "total": 36 },
+        { "numero": "C7–C13", "instrucao": "pb em cada ponto", "total": 36, "nota": "Posicionar olhos de segurança entre C10-C11." },
+        { "numero": "C14", "instrucao": "*4 pb, dim* repita 6×", "total": 30 },
+        { "numero": "C15", "instrucao": "*3 pb, dim* repita 6×", "total": 24 },
+        { "numero": "C16", "instrucao": "*2 pb, dim* repita 6×", "total": 18 },
+        { "numero": "C17", "instrucao": "*1 pb, dim* repita 6×", "total": 12 }
+      ],
+      "fechamento": "Arrematar e deixar fio para costurar no corpo."
+    },
     {
       "nome": "Chapéu Vermelho",
       "quantidade": 1,
       "carreiras": [
-        {
-          "numero": "C1",
-          "instrucao": "AM, 6 pb (vermelho)",
-          "total": 6
-        },
-        {
-          "numero": "C2",
-          "instrucao": "aum em cada ponto",
-          "total": 12
-        },
-        {
-          "numero": "C3",
-          "instrucao": "*1 pb, aum* repita 6×",
-          "total": 18
-        },
-        {
-          "numero": "C4",
-          "instrucao": "*2 pb, aum* repita 6×",
-          "total": 24
-        },
-        {
-          "numero": "C5–C8",
-          "instrucao": "pb em cada ponto",
-          "total": 24,
-          "nota": "⚠️ Fazer a aba do boné nas últimas carreiras em FLO."
-        }
+        { "numero": "C1", "instrucao": "AM, 6 pb (vermelho)", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
+        { "numero": "C5", "instrucao": "*3 pb, aum* repita 6×", "total": 30 },
+        { "numero": "C6", "instrucao": "*4 pb, aum* repita 6×", "total": 36 },
+        { "numero": "C7–C9", "instrucao": "pb em cada ponto", "total": 36 },
+        { "numero": "C10", "instrucao": "FLO (para aba): 10 pb, 16 mpa, 10 pb", "total": 36 }
       ],
-      "fechamento": "Deixar fio para prender na cabeça."
+      "fechamento": "Arremate, esconda o fio e costure sobre a cabeça."
+    },
+    {
+      "nome": "Nariz Redondo Grande",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "AM, 6 pb (pele)", "total": 6 },
+        { "numero": "C2", "instrucao": "*1 pb, aum* repita 3×", "total": 9 },
+        { "numero": "C3", "instrucao": "pb em cada ponto", "total": 9 }
+      ],
+      "fechamento": "Rechear de leve e costurar no rosto."
     }
   ],
   "montagem": [
-    {
-      "texto": "Costure o chapéu vermelho inclinado no topo da cabeça."
-    },
-    {
-      "texto": "Costure o nariz redondo grande e o bigode preto logo abaixo dele."
-    },
-    {
-      "texto": "Adicione dois pontos amarelos no peito para simular os botões do macacão."
-    },
-    {
-      "texto": "Borde o círculo branco na frente do chapéu e faça um pequeno \"M\" em vermelho."
-    }
+    { "texto": "Costure o chapéu vermelho inclinado no topo da cabeça." },
+    { "texto": "Costure o nariz redondo grande logo abaixo dos olhos." },
+    { "texto": "Borde um bigode preto grosso abaixo do nariz ou faça um pequeno retângulo de crochê marrom/preto." },
+    { "texto": "Usando feltro branco, crie um pequeno círculo para colocar na frente do chapéu e desenhe um M vermelho no centro." },
+    { "texto": "Faça as alças do macacão usando crochê plano em fio azul e prenda 2 botões de crochê amarelo." }
   ],
   "acabamento": [
-    {
-      "texto": "Esconda todos os fios."
-    }
+    { "texto": "Ajuste os sapatos para que ele consiga se equilibrar sozinho." }
   ]
 };
 
@@ -2875,91 +2756,82 @@ const yoshi: Receita = {
   "slug": "yoshi",
   "nome": "Yoshi",
   "categoria": "videogames",
-  "nivel": "intermediario",
-  "tamanhoFinal": "~13 cm",
-  "tempoEstimado": "5–6 horas",
-  "emoji": "🦕",
-  "corCard": "#E4F4E4",
+  "nivel": "avancado",
+  "tamanhoFinal": "~15 cm",
+  "tempoEstimado": "6–7 horas",
+  "emoji": "🦖",
+  "corCard": "#DFF2DF",
   "imagemUrl": "/receitas/yoshi/capa.jpg",
+  "videoUrl": "https://www.youtube.com/embed/USnlnQXe3Es",
   "materiais": [
-    {
-      "item": "Fio Amigurumi verde claro (principal)",
-      "detalhe": "aprox. 40 g"
-    },
-    {
-      "item": "Fio Amigurumi branco (bochechas e barriga)",
-      "detalhe": "aprox. 15 g"
-    },
-    {
-      "item": "Fio Amigurumi laranja (botas)",
-      "detalhe": "aprox. 10 g"
-    },
-    {
-      "item": "Fio Amigurumi vermelho (espinhos/casca nas costas)",
-      "detalhe": "aprox. 10 g"
-    },
-    {
-      "item": "Agulha de crochê",
-      "detalhe": "3,0 mm"
-    }
+    { "item": "Fio Amigurumi verde claro (corpo principal)", "detalhe": "aprox. 45 g" },
+    { "item": "Fio Amigurumi branco (bochechas e barriga)", "detalhe": "aprox. 25 g" },
+    { "item": "Fio Amigurumi laranja escuro / marrom e vermelho (botas e carapaça)", "detalhe": "aprox. 15 g" },
+    { "item": "Fio vermelho (língua/espinhos)", "detalhe": "aprox. 10 g" },
+    { "item": "Agulha de crochê", "detalhe": "2,5 mm" },
+    { "item": "Olhos de segurança pretos com borda branca", "detalhe": "12 mm (ovais)" }
   ],
   "abreviacoes": [
-    {
-      "sigla": "AM",
-      "significado": "Anel mágico"
-    },
-    {
-      "sigla": "pb",
-      "significado": "Ponto baixo"
-    }
+    { "sigla": "AM", "significado": "Anel mágico" },
+    { "sigla": "pb", "significado": "Ponto baixo" },
+    { "sigla": "aum", "significado": "Aumento" },
+    { "sigla": "dim", "significado": "Diminuição" }
   ],
   "notas": [
-    "A casca vermelha é recheada levemente e costurada na parte de trás do corpo."
+    "A cabeça do Yoshi possui formatos protuberantes que são costurados juntos depois."
   ],
   "partes": [
     {
-      "nome": "Cabeça (Focinho e Cabeça integrados)",
+      "nome": "Focinho Grande (Verde)",
       "quantidade": 1,
       "carreiras": [
-        {
-          "numero": "C1",
-          "instrucao": "AM, 6 pb (verde)",
-          "total": 6
-        },
-        {
-          "numero": "C2",
-          "instrucao": "aum em cada ponto",
-          "total": 12
-        },
-        {
-          "numero": "C3",
-          "instrucao": "*1 pb, aum* repita 6×",
-          "total": 18
-        },
-        {
-          "numero": "C4–C10",
-          "instrucao": "pb em cada ponto",
-          "total": 18
-        }
+        { "numero": "C1", "instrucao": "AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
+        { "numero": "C5–C8", "instrucao": "pb em cada ponto", "total": 24 },
+        { "numero": "C9", "instrucao": "*2 pb, dim* repita 6×", "total": 18 }
       ],
-      "fechamento": "Deixar fio."
+      "fechamento": "Rechear muito bem para dar a aparência fofinha redonda do Yoshi. Deixar fio para costurar na cabeça principal."
+    },
+    {
+      "nome": "Cabeça Principal e Bochechas",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com verde: AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
+        { "numero": "C5–C10", "instrucao": "pb em cada ponto", "total": 24 },
+        { "numero": "C11", "instrucao": "*2 pb, dim* repita 6×", "total": 18 }
+      ],
+      "fechamento": "Rechear a bola que será os olhos e topo da cabeça."
+    },
+    {
+      "nome": "Corpo (Verde e Branco)",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com verde: AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
+        { "numero": "C5", "instrucao": "Trocar para branco na frente para a barriga (8 pontos) e verde no resto.", "total": 24 },
+        { "numero": "C6–C10", "instrucao": "Manter a mudança de cor, pb em cada ponto", "total": 24 },
+        { "numero": "C11", "instrucao": "*2 pb, dim* repita 6× mantendo as cores", "total": 18 },
+        { "numero": "C12", "instrucao": "*1 pb, dim* repita 6×", "total": 12 }
+      ],
+      "fechamento": "Deixar fio verde longo para costurar na cabeça."
     }
   ],
   "montagem": [
-    {
-      "texto": "Costure as bochechas brancas (círculos planos) ao redor do focinho verde da cabeça."
-    },
-    {
-      "texto": "Costure a casca vermelha com borda branca nas costas."
-    },
-    {
-      "texto": "Costure as botas laranjas sob o corpo."
-    }
+    { "texto": "Costure o Focinho Grande na frente da Cabeça Principal." },
+    { "texto": "Prenda os olhos com feltro branco alongado por trás para o estilo cartoon." },
+    { "texto": "Costure o corpo à cabeça, alinhando a barriga branca à frente do focinho." },
+    { "texto": "Adicione as botas marrom alaranjadas nas pernas do boneco." },
+    { "texto": "Nas costas, costure a pequena sela vermelha em formato de casca redonda e três espinhos vermelhos atrás do pescoço." }
   ],
   "acabamento": [
-    {
-      "texto": "Borde os olhos longos pretos e brancos nas laterais."
-    }
+    { "texto": "Finalize os arremates e certifique-se de que a cauda grossa ajuda no equilíbrio dele sentado." }
   ]
 };
 
@@ -3068,77 +2940,85 @@ const naruto: Receita = {
   "nome": "Naruto Uzumaki",
   "categoria": "personagens",
   "nivel": "intermediario",
-  "tamanhoFinal": "~14 cm",
+  "tamanhoFinal": "~15 cm",
   "tempoEstimado": "5–6 horas",
-  "emoji": "🦊",
-  "corCard": "#FFF1E0",
+  "emoji": "🍥",
+  "corCard": "#FDEBD0",
   "imagemUrl": "/receitas/naruto/capa.jpg",
+  "videoUrl": "https://www.youtube.com/embed/Q23T2Z8J9U0",
   "materiais": [
-    {
-      "item": "Fio Amigurumi laranja e preto (roupa)",
-      "detalhe": "aprox. 30 g cada"
-    },
-    {
-      "item": "Fio Amigurumi pele",
-      "detalhe": "aprox. 20 g"
-    },
-    {
-      "item": "Fio Amigurumi amarelo (cabelo)",
-      "detalhe": "aprox. 25 g"
-    },
-    {
-      "item": "Agulha de crochê",
-      "detalhe": "2,5 mm"
-    }
+    { "item": "Fio Amigurumi cor da pele", "detalhe": "aprox. 20 g" },
+    { "item": "Fio Amigurumi amarelo vibrante (cabelo)", "detalhe": "aprox. 30 g" },
+    { "item": "Fio Amigurumi laranja (roupa principal)", "detalhe": "aprox. 30 g" },
+    { "item": "Fio azul escuro/preto (sandálias e bandana)", "detalhe": "aprox. 15 g" },
+    { "item": "Fio prateado ou feltro cinza", "detalhe": "para o centro da bandana" },
+    { "item": "Agulha de crochê", "detalhe": "2,5 mm" },
+    { "item": "Olhos de segurança", "detalhe": "9 mm azuis" }
   ],
   "abreviacoes": [
-    {
-      "sigla": "AM",
-      "significado": "Anel mágico"
-    }
+    { "sigla": "AM", "significado": "Anel mágico" },
+    { "sigla": "pb", "significado": "Ponto baixo" },
+    { "sigla": "aum", "significado": "Aumento" },
+    { "sigla": "dim", "significado": "Diminuição" }
   ],
   "notas": [
-    "A bandana é feita com uma faixa preta ou azul escuro e um retângulo cinza de crochê costurado na testa."
+    "A bandana é feita como uma fita costurada ou amarrada na cabeça."
   ],
   "partes": [
+    {
+      "nome": "Corpo (Laranja e Azul)",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com fio azul (pé): AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "Mudar para fio laranja (calça): pb em cada ponto", "total": 12 },
+        { "numero": "C4–C5", "instrucao": "pb em cada ponto. Arremate a perna 1, junte à perna 2 com 2 corr", "total": 12 },
+        { "numero": "C6", "instrucao": "Juntando pernas: 12 pb + 2 pb nas corr + 12 pb + 2 pb nas corr", "total": 28 },
+        { "numero": "C7–C11", "instrucao": "pb em cada ponto. A partir da C8 adicione alguns detalhes laterais azuis da jaqueta.", "total": 28 },
+        { "numero": "C12", "instrucao": "*5 pb, dim* repita 4×", "total": 24 },
+        { "numero": "C13", "instrucao": "pb em cada ponto", "total": 24 },
+        { "numero": "C14", "instrucao": "*2 pb, dim* repita 6×", "total": 18 },
+        { "numero": "C15", "instrucao": "Troque para pele (pescoço): *1 pb, dim* repita 6×", "total": 12 }
+      ],
+      "fechamento": "Recheie firme e deixe fio laranja ou azul para detalhes finais da gola."
+    },
+    {
+      "nome": "Cabeça",
+      "quantidade": 1,
+      "carreiras": [
+        { "numero": "C1", "instrucao": "Com fio cor de pele: AM, 6 pb", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "*1 pb, aum* repita 6×", "total": 18 },
+        { "numero": "C4", "instrucao": "*2 pb, aum* repita 6×", "total": 24 },
+        { "numero": "C5", "instrucao": "*3 pb, aum* repita 6×", "total": 30 },
+        { "numero": "C6", "instrucao": "*4 pb, aum* repita 6×", "total": 36 },
+        { "numero": "C7–C13", "instrucao": "pb em cada ponto", "total": 36, "nota": "Olhos azuis de 9 mm entre C10-C11." },
+        { "numero": "C14", "instrucao": "*4 pb, dim* repita 6×", "total": 30 },
+        { "numero": "C15", "instrucao": "*3 pb, dim* repita 6×", "total": 24 },
+        { "numero": "C16", "instrucao": "*2 pb, dim* repita 6×", "total": 18 },
+        { "numero": "C17", "instrucao": "*1 pb, dim* repita 6×", "total": 12 }
+      ],
+      "fechamento": "Rechear cabeça e arrematar fios soltos."
+    },
     {
       "nome": "Cabelo Espetado Amarelo",
       "quantidade": 1,
       "carreiras": [
-        {
-          "numero": "C1",
-          "instrucao": "AM, 6 pb",
-          "total": 6
-        },
-        {
-          "numero": "C2",
-          "instrucao": "aum em cada ponto",
-          "total": 12
-        },
-        {
-          "numero": "C3",
-          "instrucao": "Para cada ponto, faça 6 correntes e volte fazendo pb para criar as pontas do cabelo",
-          "total": 12
-        }
+        { "numero": "C1", "instrucao": "Em AM, 6 pb (amarelo)", "total": 6 },
+        { "numero": "C2", "instrucao": "aum em cada ponto", "total": 12 },
+        { "numero": "C3", "instrucao": "Faça mechas: *8 corr, volta com 7 mpa, pbx no próximo ponto da base*. Repetir em todos os 12 pontos.", "total": 0 }
       ],
-      "fechamento": "Costurar no topo da cabeça."
+      "fechamento": "Deixe fio muito longo. Essa peruca formará os picos do cabelo de Naruto."
     }
   ],
   "montagem": [
-    {
-      "texto": "Costure o cabelo espetado por cima da cabeça."
-    },
-    {
-      "texto": "Coloque a bandana ao redor da testa, logo abaixo do cabelo."
-    },
-    {
-      "texto": "Borde os risquinhos nas bochechas dele com fio preto."
-    }
+    { "texto": "Costure o topo da cabeça com a base de cabelo e posicione cada pico dourado ao redor do rosto." },
+    { "texto": "Borde 3 finos bigodes de gato (Kurama) em cada bochecha." },
+    { "texto": "Faça a bandana com uma tira azul marinho de crochê plano e costure o símbolo espiral vermelho no braço esquerdo." },
+    { "texto": "Adicione o símbolo da Folha na bandana (com fio preto em feltro prateado) e amarre na testa do Naruto." }
   ],
   "acabamento": [
-    {
-      "texto": "Arremate as pontas e esconda."
-    }
+    { "texto": "Finalize os arremates da gola branca da jaqueta de inverno dele." }
   ]
 };
 
